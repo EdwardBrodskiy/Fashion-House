@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Text } from '@chakra-ui/core'
+import { Box, Heading, Text, Image } from '@chakra-ui/react'
 import content from './content.json'
 
 export function FashionHouse() {

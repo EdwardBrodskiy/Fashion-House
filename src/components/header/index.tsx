@@ -1,8 +1,10 @@
 import React from 'react'
-import { Box, Flex, useColorMode } from '@chakra-ui/core'
+import { Box, Flex, useColorMode, Image, Center } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import { DarkModeToggle } from '../DarkMode'
 import { NavItem } from './NavItem'
+import logo from '../../logo_pic.svg'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 export const Header = () => {
   const { colorMode } = useColorMode()
@@ -21,17 +23,12 @@ export const Header = () => {
         width='full'
       >
         <Flex justify='space-between' align='center' w='100%' h='100%'>
-          <Flex align='center' justify='space-evenly' maxWidth='480px'>
-            <NavItem>
-              <Link to='/'>Fashion House</Link>
-            </NavItem>
-            <NavItem>
-              <Link to='/models'>Models</Link>
-            </NavItem>
-            <NavItem>
-              <Link to='/events'>Events</Link>
-            </NavItem>
-          </Flex>
+          <HamburgerIcon boxSize={10}/>
+
+          <Center>
+            <Image src={logo} color='white' height='3rem'/>
+          </Center>
+       
           <DarkModeToggle />
         </Flex>
       </Box>
