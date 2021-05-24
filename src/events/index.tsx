@@ -4,7 +4,7 @@ import { Box, Heading } from '@chakra-ui/core'
 export function Events() {
   return (
     <Box>
-      <Heading >Events</Heading>
+      <Heading>Events</Heading>
     </Box>
   )
 }

@@ -4,15 +4,15 @@ import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { HashRouter } from 'react-router-dom'
 import './App.css'
-import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core"
+import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core'
 import Routes from './routes'
-import { createBrowserHistory } from "history"
+import { createBrowserHistory } from 'history'
 
 const history = createBrowserHistory()
 
 function App() {
   return (
-    <ThemeProvider >
+    <ThemeProvider>
       <ColorModeProvider>
         <CSSReset />
         <HashRouter basename='/'>
@@ -27,7 +27,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 )
 
 // If you want your app to work offline and load faster, you can change

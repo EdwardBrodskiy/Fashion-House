@@ -7,19 +7,19 @@ import { FashionHouse } from './fashionHouse'
 import { Events } from './events'
 
 const Routes = () => {
-  return (<>
-  <Header />
-  <Box m={4} mx='10%' >
-    <Switch>
-      <Route exact key='route-fashion-house' path='/' component={FashionHouse} />
-      <Route exact key='route-models' path='/models' component={Models} />
-      <Route exact key='route-events' path='/events' component={Events} />
-
-      <Redirect from='*' to='/' /> {/* TODO: add 404 page instead */}
-    </Switch>
-  </Box>
-
-</>)
+  return (
+    <>
+      <Header />
+      <Box m={4} mx='10%'>
+        <Switch>
+          <Route exact key='route-fashion-house' path='/' component={FashionHouse} />
+          <Route exact key='route-models' path='/models' component={Models} />
+          <Route exact key='route-events' path='/events' component={Events} />
+          <Redirect from='*' to='/' /> {/* TODO: add 404 page instead */}
+        </Switch>
+      </Box>
+    </>
+  )
 }
 
 export default Routes
