@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/core";
+import content from './content.json'
 
 export function FashionHouse() {
   return (
@@ -8,7 +9,7 @@ export function FashionHouse() {
         Fashion House
       </Heading>
 
-      <Text></Text>
+      {content.about.split('\n').map((line, index) => <Text key={index} mb={3}>{line}</Text>)}
     </Box>
   );
 }
