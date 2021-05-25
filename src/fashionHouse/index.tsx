@@ -5,7 +5,7 @@ import content from './content.json'
 export function FashionHouse() {
   return (
     <Box>
-      <Heading as='h1' mb={4}>
+      <Heading as='h1' fontSize='2.5rem' mb={4}>
         Fashion House
       </Heading>
 
