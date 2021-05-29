@@ -9,7 +9,7 @@ const style = {
   long: {
     mb: '10vh',
     height: '50vh',
-    shadow: '0px 20px 100px 100px #00152d',
+    shadow: '0px 20px 100px 100px brand.dark',
     logo_name: {
       width: '100%'
     }
@@ -27,7 +27,7 @@ const style = {
 
 export const Header = () => {
   const { colorMode } = useColorMode()
-  const bgColor = { light: '#00152d', dark: '#00152d' }
+  const bgColor = { light: 'brand.dark', dark: 'brand.dark' }
 
   const [heightMode, setHeightMode] = useState<keyof typeof style>('short')
 

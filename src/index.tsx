@@ -7,12 +7,13 @@ import './App.css'
 import { CSSReset, ChakraProvider } from '@chakra-ui/react'
 import Routes from './routes'
 import { createBrowserHistory } from 'history'
+import { theme } from './theme'
 
 const history = createBrowserHistory()
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <CSSReset />
       <HashRouter basename='/'>
         <Routes />

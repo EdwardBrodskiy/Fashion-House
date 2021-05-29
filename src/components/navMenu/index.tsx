@@ -12,6 +12,9 @@ import {
   Input,
   useDisclosure,
   Image,
+  UnorderedList,
+  ListItem,
+  Text,
 } from '@chakra-ui/react'
 import logo from '../../logo_whole.svg'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -33,12 +36,17 @@ export const NavMenu = () => {
       />
       <Drawer isOpen={isOpen} placement='left' onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent bg='#00152d' opacity='90%'>
+        <DrawerContent bg='brand.dark' opacity='90%'>
           <DrawerHeader>
             <Image src={logo} color='white' width='100%' mb={6} />
           </DrawerHeader>
 
-          <DrawerBody></DrawerBody>
+          <DrawerBody>
+            <Text size='lg'>hello?</Text>
+            <UnorderedList>
+              <ListItem >test</ListItem>
+            </UnorderedList>
+          </DrawerBody>
 
           <DrawerFooter></DrawerFooter>
         </DrawerContent>
