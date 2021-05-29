@@ -1,23 +1,23 @@
 import React from 'react'
 import {
-  Button,
   Drawer,
   DrawerBody,
-  DrawerCloseButton,
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   IconButton,
-  Input,
   useDisclosure,
   Image,
-  UnorderedList,
+  List,
   ListItem,
   Text,
+  Flex,
 } from '@chakra-ui/react'
 import logo from '../../logo_whole.svg'
+
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { NavItem } from './components/navItem'
 
 export const NavMenu = () => {
   // const { colorMode } = useColorMode()
@@ -36,16 +36,17 @@ export const NavMenu = () => {
       />
       <Drawer isOpen={isOpen} placement='left' onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent bg='brand.dark' opacity='90%'>
+        <DrawerContent bg='brand.dark' opacity='90%' color='white'>
           <DrawerHeader>
-            <Image src={logo} color='white' width='100%' mb={6} />
+            <Image src={logo} width='100%' mb={6} />
           </DrawerHeader>
 
           <DrawerBody>
-            <Text size='lg'>hello?</Text>
-            <UnorderedList>
-              <ListItem >test</ListItem>
-            </UnorderedList>
+            <List spacing={4}>
+              <NavItem to='/' onClick={onClose}>Fashion House</NavItem>
+              <NavItem to='/models' onClick={onClose}>Models</NavItem>
+              <NavItem to='/events' onClick={onClose}>Events</NavItem>
+            </List>
           </DrawerBody>
 
           <DrawerFooter></DrawerFooter>
