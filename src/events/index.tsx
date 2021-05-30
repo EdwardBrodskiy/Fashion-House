@@ -1,10 +1,12 @@
 import React from 'react'
 import { Box, Heading } from '@chakra-ui/react'
+import { DatedAccordion } from './components/DatedAccordion'
 
-export function Events() {
+export const Events = () => {
   return (
     <Box>
-      <Heading>Events</Heading>
+      <Heading mx='10%' mb={4}>Events</Heading>
+      <DatedAccordion />
     </Box>
   )
 }
