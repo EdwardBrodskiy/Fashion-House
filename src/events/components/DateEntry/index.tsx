@@ -1,27 +1,33 @@
 import React from 'react'
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react'
+import { Text, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Heading } from '@chakra-ui/react'
+import { eventRecord } from '../DatedAccordion'
+import { parse_image_and_text_list } from '../../../tools'
 
 type Props = {
-  title: string
+  event: eventRecord
 }
 
-export const DateEntry = ({ title }: Props) => {
+export const DateEntry = ({ event }: Props) => {
   return (
     <AccordionItem>
-      <h2>
-        <AccordionButton _expanded={{ bg: 'brand.dark', color: 'brand.light' }}>
-          <Box flex="1" textAlign="left" fontSize='2xl'>
-            {title}
-          </Box>
-          <AccordionIcon />
-        </AccordionButton>
-      </h2>
-      <AccordionPanel pb={4}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </AccordionPanel>
+      {({ isExpanded }) => (
+        <>
+          <h2>
+            <AccordionButton _expanded={{ bg: 'brand.dark', color: 'brand.light' }}>
+              <Box flex="1" textAlign="left" fontSize='2xl' isTruncated >
+
+                {event.title}
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel >
+            <Heading my={4}>{event.title}</Heading>
+            <Text mb={10} size='sm' >{event.date}</Text>
+            {parse_image_and_text_list(event.content, `/imgs/events/${event.key}`, { px: '10%', mb: 4 }, { my: 16 })}
+          </AccordionPanel>
+        </>
+      )}
     </AccordionItem>
   )
 }

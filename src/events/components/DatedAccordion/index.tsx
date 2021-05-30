@@ -1,12 +1,19 @@
 import React from 'react'
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react'
 import { DateEntry } from '../DateEntry'
+import { events } from '../../content.json'
+
+export type eventRecord = {
+  title: string
+  date: string
+  key: number
+  content: string[]
+}
 
 export const DatedAccordion = () => {
   return (
     <Accordion allowToggle>
-      <DateEntry title='Some Title 1' />
-      <DateEntry title='Some Title 2' />
+      {events.map((event) => <DateEntry event={event} />)}
     </Accordion>
   )
 }
