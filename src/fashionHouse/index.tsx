@@ -1,19 +1,33 @@
 import React from 'react'
-import { Box, Heading, Text, Image } from '@chakra-ui/react'
+import { Box, Heading, Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react'
 import content from './content.json'
+import { Section } from './components/section'
 
-export function FashionHouse() {
+export const FashionHouse = () => {
   return (
     <Box>
       <Heading as='h1' mb={4}>
         Fashion House
       </Heading>
+      <Tabs>
+        <TabList>
+          <Tab>About</Tab>
+          <Tab>Services</Tab>
+        </TabList>
 
-      {content.about.split('\n').map((line, index) => (
-        <Text key={index} mb={3}>
-          {line}
-        </Text>
-      ))}
+        <TabPanels px='10%'>
+          <TabPanel>
+            <Section text={content.about} />
+          </TabPanel>
+          <TabPanel>
+            <Section text={content.services} />
+          </TabPanel>
+
+        </TabPanels>
+      </Tabs>
     </Box>
   )
 }
+
+
+
