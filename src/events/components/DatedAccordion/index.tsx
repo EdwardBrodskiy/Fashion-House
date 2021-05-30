@@ -1,5 +1,5 @@
 import React from 'react'
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react'
+import { Accordion } from '@chakra-ui/react'
 import { DateEntry } from '../DateEntry'
 import { events } from '../../content.json'
 

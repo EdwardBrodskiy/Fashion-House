@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Box, Flex, useColorMode, Image, Center } from '@chakra-ui/react'
 import { DarkModeToggle } from '../DarkMode'
 import logo_pic from '../../logo_pic_wide.svg'
-import logo_name from '../../logo_name.svg'
 import { NavMenu } from '../navMenu'
 
 export const Header = () => {

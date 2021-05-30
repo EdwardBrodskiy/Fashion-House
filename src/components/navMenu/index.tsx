@@ -9,10 +9,7 @@ import {
   IconButton,
   useDisclosure,
   Image,
-  List,
-  ListItem,
-  Text,
-  Flex,
+  List
 } from '@chakra-ui/react'
 import logo from '../../logo_whole.svg'
 
@@ -20,10 +17,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { NavItem } from './components/navItem'
 
 export const NavMenu = () => {
-  // const { colorMode } = useColorMode()
-  // const bgColor = { light: 'gray.700', dark: 'gray.700' }
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = React.useRef()
   return (
     <>
       <IconButton
