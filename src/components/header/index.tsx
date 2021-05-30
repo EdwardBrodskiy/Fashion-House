@@ -20,6 +20,7 @@ export const Header = () => {
         right='0'
         top='0'
         width='full'
+        zIndex='1000'
       >
         <Flex justify='space-between' align='center' w='100%' h='100%'>
           <NavMenu />

@@ -10,7 +10,7 @@ const Routes = () => {
   return (
     <>
       <Header />
-      <Box my={4}>
+      <Box>
         <Switch>
           <Route exact key='route-fashion-house' path='/' component={FashionHouse} />
           <Route exact key='route-models' path='/models' component={Models} />

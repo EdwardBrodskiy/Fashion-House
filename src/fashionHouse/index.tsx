@@ -5,21 +5,21 @@ import { Section } from './components/section'
 
 export const FashionHouse = () => {
   return (
-    <Box>
-      <Heading as='h1' mb={4}>
-        Fashion House
-      </Heading>
-      <Tabs>
+    <Box textAlign='center'>
+
+      <Tabs isFitted>
         <TabList>
           <Tab>About</Tab>
           <Tab>Services</Tab>
         </TabList>
-
-        <TabPanels px='10%'>
-          <TabPanel>
+        <Heading as='h1' m={4}>
+          Fashion House
+      </Heading>
+        <TabPanels>
+          <TabPanel p={0}>
             <Section text={content.about} />
           </TabPanel>
-          <TabPanel>
+          <TabPanel p={0}>
             <Section text={content.services} />
           </TabPanel>
 
