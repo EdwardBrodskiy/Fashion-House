@@ -10,7 +10,7 @@ const Routes = () => {
   return (
     <>
       <Header />
-      <Box>
+      <Box mx={{ lg: '15%' }}>
         <Switch>
           <Route exact key='route-fashion-house' path='/' component={FashionHouse} />
           <Route exact key='route-models' path='/models' component={Models} />

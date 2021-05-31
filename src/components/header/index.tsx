@@ -7,12 +7,12 @@ import { NavMenu } from '../navMenu'
 export const Header = () => {
   const { colorMode } = useColorMode()
   const bgColor = { light: 'brand.dark', dark: 'brand.dark' }
-
+  const height = 20
   return (
-    <Box h={'12vh'} >
+    <Box h={height} >
       <Box
         p={4}
-        h={'12vh'}
+        h={height}
         bg={bgColor[colorMode]}
         pos='fixed'
         left='0'
