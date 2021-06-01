@@ -13,7 +13,7 @@ export type eventRecord = {
 export const DatedAccordion = () => {
   return (
     <Accordion allowToggle>
-      {events.map((event) => <DateEntry event={event} />)}
+      {events.map((event, index) => <DateEntry event={event} key={index} />)}
     </Accordion>
   )
 }
