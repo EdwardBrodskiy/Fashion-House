@@ -24,7 +24,10 @@ export const DateEntry = ({ event }: Props) => {
         return (
           <>
             <h2>
-              <AccordionButton _expanded={{ bg: 'brand.dark', color: 'brand.light' }}>
+              <AccordionButton _expanded={{
+                bg: 'brand.dark', color: 'brand.light',
+                boxShadow: '0 0 5px 1px white'
+              }}>
                 <Box flex="1" textAlign="left" fontSize='2xl' isTruncated>
 
                   {event.title}

@@ -27,6 +27,9 @@ export const NavMenu = () => {
         isRound
         icon={<HamburgerIcon boxSize={6} />}
         onClick={onOpen}
+        _focus={{
+          boxShadow: '0 0 10px 1px white'
+        }}
       />
       <Drawer isOpen={isOpen} placement='left' onClose={onClose}>
         <DrawerOverlay />

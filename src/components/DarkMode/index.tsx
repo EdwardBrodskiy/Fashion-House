@@ -12,6 +12,9 @@ export function DarkModeToggle() {
       onClick={toggleColorMode}
       icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
       isRound
+      _focus={{
+        boxShadow: '0 0 10px 1px white'
+      }}
     />
   )
 }
