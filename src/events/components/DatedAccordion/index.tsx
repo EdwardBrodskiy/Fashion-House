@@ -1,7 +1,6 @@
 import React from 'react'
 import { Accordion } from '@chakra-ui/react'
 import { DateEntry } from '../DateEntry'
-import { events } from '../../content.json'
 
 export type eventRecord = {
   title: string
@@ -10,7 +9,11 @@ export type eventRecord = {
   content: string[]
 }
 
-export const DatedAccordion = () => {
+type Props = {
+  events: eventRecord[]
+}
+
+export const DatedAccordion = ({ events }: Props) => {
   return (
     <Accordion allowToggle>
       {events.map((event, index) => <DateEntry event={event} key={index} />)}
