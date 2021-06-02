@@ -26,7 +26,7 @@ export function Models() {
                 scrollSnapType: 'y manditory',
               }}>
                 <Box minWidth='150px' height='full' />
-                {parse_image_and_text_list(image_names, '/imgs/models', {}, { width: { base: '100%', lg: '' }, height: { base: '', lg: '40em' }, my: 2 })}
+                {parse_image_and_text_list(image_names, '/imgs/models', {}, { maxWidth: { base: '', lg: '37%' }, width: { base: '100%', lg: '' }, height: { base: '', lg: '40em' }, my: 2 })}
                 <Box minWidth='150px' height='full' />
               </Flex>
             )
