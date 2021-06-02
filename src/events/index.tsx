@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Divider, Flex, Heading } from '@chakra-ui/react'
+import { Box, Text, Heading } from '@chakra-ui/react'
 import { DatedAccordion, eventRecord } from './components/DatedAccordion'
 import { events } from './content.json'
 
@@ -17,7 +17,7 @@ export const Events = () => {
   }
   return (
     <Box textAlign='center'>
-      <Heading m={4}>Events</Heading>
+      <Text as='h1' m={4} fontSize='4xl'>СОБЫТИЯ</Text>
 
       {grouped_events.map((event_group) => (
         <>

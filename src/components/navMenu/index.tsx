@@ -40,9 +40,9 @@ export const NavMenu = () => {
 
           <DrawerBody>
             <List spacing={4}>
-              <NavItem to='/' onClick={onClose}>Fashion House</NavItem>
-              <NavItem to='/models' onClick={onClose}>Models</NavItem>
-              <NavItem to='/events' onClick={onClose}>Events</NavItem>
+              <NavItem to='/' onClick={onClose}>МОДНЫЙ ДОМ</NavItem>
+              <NavItem to='/models' onClick={onClose}>МОДЕЛИ</NavItem>
+              <NavItem to='/events' onClick={onClose}>СОБЫТИЯ</NavItem>
             </List>
           </DrawerBody>
 

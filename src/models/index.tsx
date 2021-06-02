@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Heading, HStack, VStack, theme, useColorMode } from '@chakra-ui/react'
+import { Box, Flex, Text, VStack, theme, useColorMode } from '@chakra-ui/react'
 import { models } from './content.json'
 import { parse_image_and_text_list } from '../tools'
 
@@ -9,7 +9,7 @@ export function Models() {
   const edgeFadeShadow = { base: '', lg: `0 0 60px 60px ${edgeShadowColor}` }
   return (
     <Box textAlign='center'>
-      <Heading>Models</Heading>
+      <Text as='h1' m={4} fontSize='4xl'>МОДЕЛИ</Text>
       <Flex direction='row'>
         <Box zIndex={500} height='fill' boxShadow={edgeFadeShadow} />
         <VStack align='stretch' spacing={20}>

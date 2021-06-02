@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, useColorMode } from '@chakra-ui/react'
+import { Box, Text, Tab, TabList, TabPanel, TabPanels, Tabs, useColorMode } from '@chakra-ui/react'
 import content from './content.json'
 import { Section } from './components/section'
 
@@ -18,9 +18,9 @@ export const FashionHouse = () => {
           <Tab {...tabStyles}>About</Tab>
           <Tab {...tabStyles}>Services</Tab>
         </TabList>
-        <Heading as='h1' m={4}>
-          Fashion House
-      </Heading>
+        <Text as='h1' m={4} fontSize='4xl'>
+          МОДНЫЙ ДОМ
+      </Text>
         <TabPanels>
           <TabPanel p={0}>
             <Section text={content.about} />
