@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/gh-test/static/css/main.6ee8434d.chunk.css",
-    "main.js": "/gh-test/static/js/main.8be93b86.chunk.js",
-    "main.js.map": "/gh-test/static/js/main.8be93b86.chunk.js.map",
-    "runtime-main.js": "/gh-test/static/js/runtime-main.463e89e4.js",
-    "runtime-main.js.map": "/gh-test/static/js/runtime-main.463e89e4.js.map",
-    "static/js/2.286ab41c.chunk.js": "/gh-test/static/js/2.286ab41c.chunk.js",
-    "static/js/2.286ab41c.chunk.js.map": "/gh-test/static/js/2.286ab41c.chunk.js.map",
-    "index.html": "/gh-test/index.html",
-    "static/css/main.6ee8434d.chunk.css.map": "/gh-test/static/css/main.6ee8434d.chunk.css.map",
-    "static/js/2.286ab41c.chunk.js.LICENSE.txt": "/gh-test/static/js/2.286ab41c.chunk.js.LICENSE.txt",
-    "static/media/crown.ecc8ee05.svg": "/gh-test/static/media/crown.ecc8ee05.svg",
-    "static/media/logo_pic_wide.61a9ffd1.svg": "/gh-test/static/media/logo_pic_wide.61a9ffd1.svg",
-    "static/media/logo_whole.38942d94.svg": "/gh-test/static/media/logo_whole.38942d94.svg"
+    "main.css": "/Fashion-House/static/css/main.073c9b0a.css",
+    "main.js": "/Fashion-House/static/js/main.e83540d0.js",
+    "index.html": "/Fashion-House/index.html",
+    "main.073c9b0a.css.map": "/Fashion-House/static/css/main.073c9b0a.css.map",
+    "main.e83540d0.js.map": "/Fashion-House/static/js/main.e83540d0.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.463e89e4.js",
-    "static/js/2.286ab41c.chunk.js",
-    "static/css/main.6ee8434d.chunk.css",
-    "static/js/main.8be93b86.chunk.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e83540d0.js"
   ]
 }
