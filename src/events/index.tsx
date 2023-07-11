@@ -1,11 +1,11 @@
 import React from 'react'
 import { Box, Text, Heading } from '@chakra-ui/react'
 import { DatedAccordion, eventRecord } from './components/DatedAccordion'
-import { events } from './content.json'
+import content from './content.json'
 
 export const Events = () => {
   const grouped_events: eventRecord[][] = []
-  const all_events: eventRecord[] = events
+  const all_events: eventRecord[] = content.events
   for (let i = 0; i < all_events.length; i++) {
     if (i === 0 || getYear(all_events[i]) !== getYear(all_events[i - 1])) {
       const new_group: eventRecord[] = [all_events[i]]

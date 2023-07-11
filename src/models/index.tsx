@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Flex, Text, VStack, theme, useColorMode } from '@chakra-ui/react'
-import { models } from './content.json'
+import content from './content.json'
 import { parse_image_and_text_list } from '../tools'
 
 export function Models() {
@@ -13,7 +13,7 @@ export function Models() {
       <Flex direction='row'>
         <Box zIndex={500} height='fill' boxShadow={edgeFadeShadow} />
         <VStack align='stretch' spacing={20}>
-          {models.map((model, index) => {
+          {content.models.map((model, index) => {
             const image_names: string[] = []
             for (let i = 0; i < model.number; i++) {
               image_names.push(model.key + String.fromCharCode(97 + i) + '.png')

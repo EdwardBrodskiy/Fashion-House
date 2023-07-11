@@ -35,7 +35,7 @@ export const NavMenu = () => {
         <DrawerOverlay />
         <DrawerContent bg='brand.dark' opacity='90%' color='white'>
           <DrawerHeader>
-            <Image src={logo} width='100%' mb={6} />
+            <Image src={process.env.PUBLIC_URL + '/svgs/logo_whole.svg'} width='100%' mb={6} />
           </DrawerHeader>
 
           <DrawerBody>

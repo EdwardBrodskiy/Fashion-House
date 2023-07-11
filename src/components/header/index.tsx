@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Flex, useColorMode, Image, Center } from '@chakra-ui/react'
 import { DarkModeToggle } from '../DarkMode'
-import logo_pic from '../../logo_pic_wide.svg'
 import { NavMenu } from '../navMenu'
 
 export const Header = () => {
@@ -24,7 +23,7 @@ export const Header = () => {
         <Flex justify='space-between' align='center' w='100%' h='100%'>
           <NavMenu />
           <Center height='100%'>
-            <Image src={logo_pic} color='white' height='100%' />
+            <Image src={process.env.PUBLIC_URL + '/svgs/logo_pic_wide.svg'} color='white' height='100%' />
           </Center>
           <DarkModeToggle />
         </Flex>
