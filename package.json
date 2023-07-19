@@ -24,7 +24,7 @@
     "react-scripts": "5.0.1",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://EdwardBrodskiy.gihub.io/Fashion-House",
+  "homepage": "https://annabrodski.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
