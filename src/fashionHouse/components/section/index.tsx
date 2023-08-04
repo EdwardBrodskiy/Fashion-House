@@ -10,9 +10,7 @@ type Props = {
 export const Section = ({ text }: Props) => {
   return (
     <Box>
-      {parse_image_and_text_list(text, '/imgs/fashionHouse', { px: '10%', mb: 4 }, { my: 16 })}
+      {parse_image_and_text_list(text, '/imgs/fashionHouse', { px: '10%', my: 12 }, { my: 20 })}
     </Box>
   )
 }
-
-
